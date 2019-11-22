@@ -10,7 +10,7 @@ body {
     
     //index.htmlのヒーローヘッダーより画面サイズが小さい場合にスクロールバーを表示
     @media (max-width: 370px) {
-      body #wrap #top {
+      #top {
         overflow-x: scroll;
       }
     }
