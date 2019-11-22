@@ -1,0 +1,5 @@
+@mixin tab() {
+  @media (max-width: 1051px) {
+    @content;
+  }
+}
