@@ -813,7 +813,7 @@ nav ul li a:hover {
 }
 @media (max-width: 767px) and (min-width: 320px) {
   #contents #access .access-wrap .access-flex .access-explaination {
-    width: 156px;
+    width: auto;
     height: 156px;
     margin: 24px auto 0 0;
   }
