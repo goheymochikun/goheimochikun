@@ -119,7 +119,7 @@ body #wrap {
   margin-right: auto;
 }
 @media (max-width: 370px) {
-  body #wrap #top {
+  body  {
     overflow-x: scroll;
   }
 }
@@ -880,6 +880,7 @@ footer p {
 
 #about header {
   position: absolute;
+  overflow: hidden;
 }
 
 #about-contents {
@@ -911,6 +912,7 @@ footer p {
 
 #service header {
   position: absolute;
+  overflow: hidden;
 }
 
 #service-contents {
@@ -942,6 +944,7 @@ footer p {
 
 #table header {
   position: absolute;
+  overflow: hidden;
 }
 
 #table-contents {
@@ -1072,6 +1075,7 @@ footer p {
 
 #form header {
   position: absolute;
+  overflow: hidden;
 }
 
 #form-contents {
