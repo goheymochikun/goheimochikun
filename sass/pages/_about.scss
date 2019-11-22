@@ -1,0 +1,20 @@
+//ここからabout.html
+#about-contents {
+  width: 100%;
+  p {
+    @include txt($main-family,20px,normal,0,20px,$contents-color);
+    width: 400px;
+    margin: 226px auto;
+
+    @include tab() {
+      font-size: 13px;
+      line-height: 23px;
+    }
+
+    @include sp() {
+      font-size: 10px;
+      line-height: 17px;
+    }
+  }
+}
+//ここまでabout.html
