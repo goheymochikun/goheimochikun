@@ -1,4 +1,8 @@
 //ここからtable.html
+#table header {
+  position: absolute;
+}
+
 #table-contents {
   @include object(100%,700px,none);
   margin: 163px auto 50px auto;
