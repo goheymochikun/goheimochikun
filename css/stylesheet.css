@@ -678,6 +678,7 @@ nav ul li a:hover {
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .question-box h3 {
     font-size: 13px;
     line-height: 23px;
+    padding-right: 25px;
   }
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .question-box h3 span {
     top: 8px;
@@ -685,16 +686,17 @@ nav ul li a:hover {
 }
 @media (max-width: 767px) and (min-width: 320px) {
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .question-box {
-    height: 27px;
-    padding: 9px 0 0 0;
+    height: auto;
+    padding: 9px 0;
   }
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .question-box h3 {
     font-size: 10px;
     line-height: 17px;
+    padding-right: 35px;
   }
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .question-box h3 span {
     font-size: 13px;
-    top: 3px;
+    top: 10%;
   }
 }
 #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .answer-box {
@@ -729,8 +731,8 @@ nav ul li a:hover {
 }
 @media (max-width: 767px) and (min-width: 320px) {
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .answer-box {
-    height: 45px;
-    padding: 17px 0 0 0;
+    height: auto;
+    padding: 17px 0;
   }
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .answer-box h3 {
     font-size: 7px;
@@ -753,7 +755,9 @@ nav ul li a:hover {
 @media (max-width: 767px) and (min-width: 320px) {
   #contents #access .access-wrap {
     width: auto;
+    height: 360px;
     margin: 0 21px;
+    margin-bottom: 50px;
     height: 250px;
   }
 }
@@ -832,11 +836,12 @@ nav ul li a:hover {
 }
 @media (max-width: 767px) and (min-width: 320px) {
   #contents #access .access-wrap .access-flex .map iframe {
-    width: 250px;
+    width: 180px;
     height: 180px;
-    margin-left: auto;
+    margin-left: 20px;
   }
 }
+
 
 footer {
   width: 100%;
