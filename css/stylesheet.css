@@ -738,7 +738,7 @@ nav ul li a:hover {
     font-size: 7px;
     line-height: 12px;
     padding-left: 25px;
-    padding-right: 25px;
+    margin-right: 25px;
   }
 }
 #contents #access .access-wrap {
@@ -755,10 +755,9 @@ nav ul li a:hover {
 @media (max-width: 767px) and (min-width: 320px) {
   #contents #access .access-wrap {
     width: auto;
-    height: 360px;
-    margin: 0 21px;
-    margin-bottom: 50px;
     height: 250px;
+    margin: 0 21px;
+    margin-bottom: 30px;
   }
 }
 #contents #access .access-wrap h2 {
