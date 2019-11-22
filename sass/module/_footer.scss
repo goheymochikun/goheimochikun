@@ -1,0 +1,28 @@
+footer{
+  @include object(100%,60px,$footer-background);
+  text-align: center;
+  //sp
+  @include sp() {
+    height: 45px;
+  }
+
+  p{
+    @include txt($main-family,16px,normal,0,27px,$header-color);
+    padding-top: 21px;
+
+    //tablet
+    @include tab() {
+      font-size: 13px;
+      line-height: 23px;
+      padding-top: 23px;
+    }
+    //tabletここまで
+    //sp
+    @include sp() {
+      font-size: 10px;
+      line-height: 17px;
+      padding-top: 17px;
+    }
+  }
+}
+//ここまでindex.html
