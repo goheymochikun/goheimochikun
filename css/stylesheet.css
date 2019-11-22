@@ -119,7 +119,7 @@ body #wrap {
   margin-right: auto;
 }
 @media (max-width: 370px) {
-  body #wrap {
+  body #wrap #top {
     overflow-x: scroll;
   }
 }
