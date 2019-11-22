@@ -1,0 +1,9 @@
+@mixin txt($family,$size,$weight,$spacing,$height,$color){
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+  line-height: $height;
+  color: $color;
+  font-style: normal;
+}
