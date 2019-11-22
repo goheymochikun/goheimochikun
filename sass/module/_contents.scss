@@ -1,0 +1,516 @@
+#contents {
+  @include object(100%,auto,none);
+
+  #hero-header {
+    //height=517px(imgの高さ)+113px(headerの高さ)=630px
+    @include object(100%,630px,none);
+    background-position: center 113px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    cursor: default;
+    text-align: center;
+
+    img {
+      display: none;
+      padding-top: 113px;
+
+      &:nth-child(1) {
+        display: inline-block;
+      }
+    }
+
+    //tablet
+    @include tab() {
+      //height=379px(imgの高さ)+113px(headerの高さ)=492px
+      @include object(100%,492px,none);
+
+      img {
+        &:nth-child(1) {
+          display: none;
+        }
+
+        &:nth-child(2) {
+          display: inline-block;
+        }
+      }
+    }
+    //tabletここまで
+    //sp
+    @include sp() {
+      //height=204px(imgの高さ)+60px(headerの高さ)+40px(余白)=304px
+      @include object(100%,304px,none);
+      background-position: center 80px;
+
+      img {
+        padding-top: 80px;
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          display: inline-block;
+        }
+      }
+    }
+    //spここまで
+
+  }
+
+// #hero-headerここまで
+
+  #slideshow {
+    @include object(100%,308.5px,none);
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+
+    //sp
+    @include sp() {
+      height: 123px;
+      margin-bottom: 12px;
+    }
+    //spここまで
+
+    ul {
+      display: flex;
+
+      li {
+        cursor: pointer;
+        margin: 0 10px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          display: none;
+        }
+
+        a {
+          img {
+            width: 496px;
+            transition: 0.5s;
+
+            //tablet
+            @include tab() {
+              width: 368px;
+              height: 227px;
+            }
+            //tabletここまで
+            //sp
+            @include sp() {
+              width: 199px;
+              height: 123px;
+            }
+            //spここまで
+            &:last-child {
+              border: 1px solid #707070;
+            }
+
+            &:hover {
+              transform: scale(1.02);
+              border: none;
+            }
+          }
+        }
+      }
+    }
+
+    //スライドショーの前に進むボタン
+    .slick-prev {
+      @include object(50px,50px,$button-color);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 5;
+
+
+      //sp
+      @include sp() {
+        width: 30px;
+        height: 30px;
+      }
+      //spここまで
+    }
+
+    //スライドショーの次へ進むボタン
+    .slick-next {
+      @include object(50px,50px,$button-color);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: 5;
+
+      //sp
+      @include sp() {
+        width: 30px;
+        height: 30px;
+      }
+      //spここまで
+    }
+  }
+//#slideshowここまで
+
+  #news {
+    @include object(100%,763px,none);
+    //tablet
+    @include tab() {
+      height: 575.26px;
+    }
+    //tabletここまで
+    //sp
+    @include sp() {
+      height: 388px;
+    }
+    //spここまで
+
+    .news-wrap {
+      width: 1052px;
+      margin: auto;
+
+      h2 {
+        @include txt($main-family,30px,normal,0,51px,$contents-color);
+        margin-top: 71px;
+      }
+      //tablet
+      @include tab() {
+        width: 725px;
+
+        h2 {
+          font-size: 25px;
+          line-height: 43px;
+        }
+      }
+      //tabletここまで
+      //sp
+      @include sp() {
+        width: auto;
+        margin: 0 21px;
+
+        h2 {
+          font-size: 20px;
+          line-height: 34px;
+        }
+      }
+      //spここまで
+
+      ul {
+        margin-top: 70px;
+
+        //tablet
+        @include tab() {
+          margin-top: 50px;
+        }
+        //tabletここまで
+        //sp
+        @include sp() {
+          margin-top: 17px;
+        }
+        //spここまで
+
+        li {
+          @include txt($main-family,16px,normal,0,27px,$contents-color);
+          border-bottom: #707070 1px solid;
+          text-indent: -159px;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          padding-left: 159px;
+          cursor: pointer;
+
+          //tablet
+          @include tab() {
+            font-size: 13px;
+            line-height: 23px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 0;
+          }
+          //tabletここまで
+          //sp
+          @include sp() {
+            font-size: 10px;
+            line-height: 17px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+          }
+          //spここまで
+          &:first-child {
+            padding-top: 0;
+          }
+
+          time {
+            display: inline-block;
+            width: 159px;
+            text-indent: 0;
+            //tablet
+            @include tab() {
+              display: block;
+            }
+            //tabletここまで
+          }
+        }
+      }
+    }
+  }
+//#newsここまで
+  #QandA {
+    @include object(100%,auto,$question-background);
+    padding-bottom: 10px;
+
+    .QandA-wrap {
+      width: 1052px;
+      margin: 0 auto;
+
+      //tablet
+      @include tab() {
+        width: 725px;
+      }
+      //tabletここまで
+      //sp
+      @include sp() {
+        width: auto;
+        margin: 0 21px;
+      }
+      //spここまで
+
+      h2 {
+        @include txt($main-family,30px,normal,0,51px,$contents-color);
+        padding-top: 34.8px;
+
+        //tablet
+        @include tab() {
+          font-size: 25px;
+          line-height: 43px;
+        }
+        //tabletここまで
+        //sp
+        @include sp() {
+          font-size: 20px;
+          line-height: 34px;
+        }
+        //spここまで
+      }
+
+      .QandA-box-wrap {
+        width: 1052px;
+        margin-top: 43px;
+        margin-left: auto;
+        margin-right: auto;
+
+        //tablet
+        @include tab() {
+          width: 725px;
+          margin-top: 32px;
+        }
+        //tabletここまで
+        //sp
+        @include sp() {
+          width: auto;
+          margin-top: 26px;
+        }
+        //spここまで
+
+        .QandA-box {
+          margin-bottom: 18px;
+          //sp
+          @include sp() {
+            margin-bottom: 9px;
+          }
+          //spここまで
+
+          .question-box {
+            @include object(100%,48px,$contents-background);
+            padding: 24px 0 0 0;
+            border: 1px solid #707070;
+            position: relative;
+            cursor: pointer;
+
+            h3 {
+              @include txt($main-family,16px,normal,0,27px,$contents-color);
+              // jsのhoverのため
+              display: inline-block;
+              margin-left: 15px;
+
+              span {
+                @include txt($main-family,20px,normal,0,34px,$contents-color);
+                position: absolute;
+                top: 20px;
+                right: 15.5px;
+              }
+            }
+
+            //.question-boxのtablet
+            @include tab() {
+              height: 37px;
+              padding: 13px 0 0 0;
+
+              h3 {
+                font-size: 13px;
+                line-height: 23px;
+
+                span {
+                  top: 8px;
+                }
+              }
+            }
+            //.question-boxのtabletここまで
+            //.question-boxのsp
+            @include sp() {
+              height: 27px;
+              padding: 9px 0 0 0;
+
+              h3 {
+                font-size: 10px;
+                line-height: 17px;
+
+                span {
+                  font-size: 13px;
+                  top: 3px;
+                }
+              }
+            }
+            //.question-boxのspここまで
+          }
+
+          .answer-box {
+            @include object(100%,80px,$contents-background);
+            padding: 19px 0 0 0;
+            border: 1px solid #707070;
+            border-top: none;
+            display: none;
+
+            h3{
+              @include txt($main-family,16px,normal,0,27px,$contents-color);
+              padding-left: 35px;
+            }
+
+            //.answer-boxのtablet
+            @include tab() {
+              height: 60px;
+              padding: 11.5px 0 0 0;
+
+              h3 {
+                font-size: 13px;
+                line-height: 23px;
+                padding-left: 32px;
+              }
+            }
+            //.answer-boxのtabletここまで
+            //.answer-boxのsp
+            @include sp() {
+              height: 45px;
+              padding: 17px 0 0 0;
+
+              h3 {
+                font-size: 7px;
+                line-height: 12px;
+                padding-left: 25px;
+                padding-right: 25px;
+              }
+            }
+            //.answer-boxのspここまで
+          }
+        }
+      }
+    }
+  }
+  //#QandAここまで
+
+  #access {
+    .access-wrap {
+      @include object(1052px,392px,none);
+      margin: 0 auto;
+
+      //tablet
+      @include tab() {
+        width: 725px;
+      }
+      //tabletここまで
+      //sp
+      @include sp() {
+        width: auto;
+        margin: 0 21px;
+        height: 250px;
+      }
+      //spここまで
+
+      h2 {
+        @include txt($main-family,30px,normal,0,51px,$contents-color);
+        margin-top: 49px;
+
+        //tablet
+        @include tab() {
+          font-size: 25px;
+          line-height: 43px;
+        }
+        //tabletここまで
+        //sp
+        @include sp() {
+          font-size: 20px;
+          line-height: 34px;
+        }
+        //spここまで
+      }
+
+      .access-flex {
+        display: flex;
+
+        .access-explaination {
+          @include object(413px,284px,none);
+          margin: 78px 112px 0 0;
+
+          address, p {
+            @include txt($main-family,16px,normal,0,27px,$contents-color);
+          }
+          //.access-explainationのtablet
+          @include tab() {
+            width: 300px;
+            height: 246px;
+            margin: 40px 65px 0 0;
+
+            address, p {
+              font-size: 13px;
+              line-height: 23px;
+            }
+          }
+          //.access-explainationのtabletここまで
+          //.access-explainationのsp
+          @include sp() {
+            width: 156px;
+            height: 156px;
+            margin: 24px auto 0 0;
+
+            address, p {
+              font-size: 8px;
+              line-height: 14px;
+            }
+          }
+          //.access-explainationのspここまで
+        }
+
+        .map {
+          iframe {
+            @include object(600px,300px,none);
+            //tablet
+            @include tab() {
+              width: 360px;
+              height: 250px;
+            }
+            //tabletここまで
+            //sp
+            @include sp() {
+              width: 250px;
+              height: 180px;
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  // #accessここまで
+}
+// #contentsここまで
