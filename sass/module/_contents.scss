@@ -353,7 +353,7 @@
               h3 {
                 font-size: 13px;
                 line-height: 23px;
-                padding-right: 25px;
+                margin-right: 25px;
 
                 span {
                   top: 8px;
@@ -437,10 +437,9 @@
       //sp
       @include sp() {
         width: auto;
-        height: 360px;
-        margin: 0 21px;
-        margin-bottom: 50px;
         height: 250px;
+        margin: 0 21px;
+        margin-bottom: 30px;
       }
       //spここまで
 
