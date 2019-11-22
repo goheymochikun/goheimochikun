@@ -659,7 +659,7 @@ nav ul li a:hover {
   color: #707070;
   font-style: normal;
   position: absolute;
-  top: 12.5px;
+  top: 20px;
   right: 15.5px;
 }
 @media (max-width: 1051px) {
