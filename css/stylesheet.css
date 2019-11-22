@@ -866,6 +866,10 @@ footer p {
   }
 }
 
+#about header {
+  position: absolute;
+}
+
 #about-contents {
   width: 100%;
 }
@@ -893,6 +897,10 @@ footer p {
   }
 }
 
+#service header {
+  position: absolute;
+}
+
 #service-contents {
   width: 100%;
 }
@@ -918,6 +926,10 @@ footer p {
     font-size: 10px;
     line-height: 17px;
   }
+}
+
+#table header {
+  position: absolute;
 }
 
 #table-contents {
@@ -1044,6 +1056,10 @@ footer p {
   #table-contents table tbody th {
     width: 150px;
   }
+}
+
+#form header {
+  position: absolute;
 }
 
 #form-contents {
