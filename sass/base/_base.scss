@@ -10,7 +10,9 @@ body {
     
     //index.htmlのヒーローヘッダーより画面サイズが小さい場合にスクロールバーを表示
     @media (max-width: 370px) {
-      overflow-x: scroll;
+      body #wrap #top {
+        overflow-x: scroll;
+      }
     }
 
     a.slick-slide {
