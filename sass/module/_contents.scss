@@ -213,6 +213,7 @@
 
         li {
           @include txt($main-family,16px,normal,0,27px,$contents-color);
+          width: 1052px;
           border-bottom: #707070 1px solid;
           text-indent: -159px;
           padding-top: 50px;
@@ -222,6 +223,7 @@
 
           //tablet
           @include tab() {
+            width: 725px;
             font-size: 13px;
             line-height: 23px;
             padding-top: 20px;
@@ -231,6 +233,7 @@
           //tabletここまで
           //sp
           @include sp() {
+            width: auto;
             font-size: 10px;
             line-height: 17px;
             padding-top: 13px;
