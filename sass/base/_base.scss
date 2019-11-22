@@ -2,21 +2,22 @@
 body {
   margin: 0;
   padding: 0;
+
   #wrap {
     width: 100%;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    
-    //index.htmlのヒーローヘッダーより画面サイズが小さい場合にスクロールバーを表示
-    @media (max-width: 370px) {
-      #top {
-        overflow-x: scroll;
-      }
-    }
 
     a.slick-slide {
       display: none;
+    }
+  }
+
+  //index.htmlのヒーローヘッダーより画面サイズが小さい場合にスクロールバーを表示
+  @media (max-width: 374px) {
+    #top #wrap{
+      overflow-x: scroll;
     }
   }
 }
