@@ -692,7 +692,7 @@ nav ul li a:hover {
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .question-box h3 {
     font-size: 10px;
     line-height: 17px;
-    padding-right: 35px;
+    margin-right: 35px;
   }
   #contents #QandA .QandA-wrap .QandA-box-wrap .QandA-box .question-box h3 span {
     font-size: 13px;
@@ -738,7 +738,7 @@ nav ul li a:hover {
     font-size: 7px;
     line-height: 12px;
     padding-left: 25px;
-    margin-right: 25px;
+    padding-right: 25px;
   }
 }
 #contents #access .access-wrap {
