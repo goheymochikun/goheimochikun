@@ -353,6 +353,7 @@
               h3 {
                 font-size: 13px;
                 line-height: 23px;
+                padding-right: 25px;
 
                 span {
                   top: 8px;
@@ -362,16 +363,17 @@
             //.question-boxのtabletここまで
             //.question-boxのsp
             @include sp() {
-              height: 27px;
-              padding: 9px 0 0 0;
+              height: auto;
+              padding: 9px 0;
 
               h3 {
                 font-size: 10px;
                 line-height: 17px;
+                padding-right: 35px;
 
                 span {
                   font-size: 13px;
-                  top: 3px;
+                  top: 10%;
                 }
               }
             }
@@ -404,8 +406,8 @@
             //.answer-boxのtabletここまで
             //.answer-boxのsp
             @include sp() {
-              height: 45px;
-              padding: 17px 0 0 0;
+              height: auto;
+              padding: 17px 0;
 
               h3 {
                 font-size: 7px;
@@ -435,7 +437,9 @@
       //sp
       @include sp() {
         width: auto;
+        height: 360px;
         margin: 0 21px;
+        margin-bottom: 50px;
         height: 250px;
       }
       //spここまで
@@ -505,9 +509,9 @@
             //tabletここまで
             //sp
             @include sp() {
-              width: 250px;
+              width: 180px;
               height: 180px;
-              margin-left: auto;
+              margin-left: 20px;
             }
           }
         }
