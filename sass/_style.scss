@@ -1,0 +1,19 @@
+@import "./setting/_font.scss";
+@import "./setting/_color.scss";
+
+@import "./mixin/_object.scss";
+@import "./mixin/_txt.scss";
+@import "./mixin/_tab.scss";
+@import "./mixin/_sp.scss";
+
+@import "./base/_reset.scss";
+@import "./base/_base.scss";
+
+@import "./module/_header.scss";
+@import "./module/_contents.scss";
+@import "./module/_footer.scss";
+
+@import "./pages/_about.scss";
+@import "./pages/_service.scss";
+@import "./pages/_table.scss";
+@import "./pages/_form.scss";
