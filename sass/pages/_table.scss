@@ -1,0 +1,122 @@
+//ここからtable.html
+#table-contents {
+  @include object(100%,700px,none);
+  margin: 163px auto 50px auto;
+
+  //tablet
+  @include tab() {
+    height: 500px;
+  }
+  //tabletここまで
+  //sp
+  @include sp() {
+    width: auto;
+    height: 400px;
+    margin: 100px 21px 50px 21px;
+  }
+  //spここまで
+
+  table {
+    width: 1052px;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    //tablet
+    @include tab() {
+      width: 725px;
+    }
+    //tabletここまで
+    //sp
+    @include sp() {
+      width: 100%;
+    }
+    //spここまで
+
+    th, td {
+      padding: 15px;
+      border: 1px solid #707070;
+
+      //tablet
+      @include tab() {
+        padding: 5px;
+      }
+      //tabletここまで
+    }
+
+    caption {
+      @include txt($main-family,25px,normal,0,35px,$contents-color);
+      margin: 35px;
+
+      @include tab() {
+        font-size: 13px;
+        line-height: 23px;
+      }
+      //sp
+      @include sp() {
+        font-size: 10px;
+        line-height: 17px;
+      }
+      //spここまで
+    }
+
+    thead {
+      background-color: #c7c8c9;
+
+      th {
+        @include txt($main-family,20px,bold,0,20px,$contents-color);
+
+        @include tab() {
+          font-size: 13px;
+          line-height: 23px;
+        }
+        //sp
+        @include sp() {
+          font-size: 10px;
+          line-height: 17px;
+        }
+        //spここまで
+      }
+    }
+
+    tbody {
+      background-color: $contents-background;
+
+      th, td {
+        @include txt($main-family,20px,normal,0,20px,$contents-color);
+
+        //tablet
+        @include tab() {
+          font-size: 13px;
+          line-height: 23px;
+        }
+        //tabletここまで
+        //sp
+        @include sp() {
+          font-size: 10px;
+          line-height: 17px;
+        }
+        //spここまで
+      }
+
+      th {
+        width: 300px;
+
+        //tablet
+        @include tab() {
+          width: 200px;
+        }
+        //tabletここまで
+        //sp
+        @include sp() {
+          width: 150px;
+        }
+        //spここまで
+
+        &:last-of-type {
+
+        }
+      }
+    }
+  }
+}
+//ここまでtable.html
