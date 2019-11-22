@@ -529,6 +529,7 @@ nav ul li a:hover {
   line-height: 27px;
   color: #707070;
   font-style: normal;
+  width: 1052px;
   border-bottom: #707070 1px solid;
   text-indent: -159px;
   padding-top: 50px;
@@ -538,6 +539,7 @@ nav ul li a:hover {
 }
 @media (max-width: 1051px) {
   #contents #news .news-wrap ul li {
+    width: 725px;
     font-size: 13px;
     line-height: 23px;
     padding-top: 20px;
@@ -547,6 +549,7 @@ nav ul li a:hover {
 }
 @media (max-width: 767px) and (min-width: 320px) {
   #contents #news .news-wrap ul li {
+    width: auto;
     font-size: 10px;
     line-height: 17px;
     padding-top: 13px;
