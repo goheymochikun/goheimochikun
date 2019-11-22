@@ -1,0 +1,179 @@
+//ここからheader
+header {
+  @include object(100%,113px,$header-background);
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  z-index: 10;
+
+  // sp幅の場合
+  @include sp() {
+    height: 60px;
+  }
+  // sp幅の場合ここまで
+
+  .header-wrap {
+    @include object(1052px,auto,none);
+    margin: 20px auto;
+    display: flex;
+
+    //tablet幅の場合
+    @include tab() {
+      width: 725px;
+    }
+    //tabletここまで
+
+    //sp
+    @include sp() {
+      width: 372px;
+      margin: 0 21px;
+    }
+    // spここまで
+
+    .header-logo {
+      @include object(318px,77px,none);
+      margin-right: 246px;
+      img {
+        @include object(318px,77px,none);
+      }
+
+      //tablet
+      @include tab() {
+        @include object(212px,50px,none);
+        margin-top: 11px;
+        margin-right: 123px;
+        img {
+          @include object(212px,50px,none);
+        }
+      }
+      //tabletここまで
+
+      //sp
+      @include sp() {
+        @include object(159px,37px,none);
+        margin-right: auto;
+        img {
+          @include object(159px,37px,none);
+        }
+      }
+      //spここまで
+    }
+    .header-right {
+      @include object(488px,16px,none);
+      margin-top: 29px;
+
+      //tablet
+      @include tab() {
+        @include object(389px,13px,none);
+        margin-top: 31px;
+      }
+      //tabletここまで
+      //sp
+      @include sp() {
+        display: none;
+      }
+      //spここまで
+
+      ul {
+        display: flex;
+        li {
+          margin-right: 24px;
+          //tablet
+          @include tab(){
+            margin-right: 17px;
+          }
+          //tabletここまで
+
+          &:nth-last-child(1) {
+            margin-right: 0px;
+          }
+
+          a {
+            @include txt($header-family,16px,normal,0,27px,$header-color);
+            //tablet
+            @include tab() {
+              font-size: 13px;
+              line-height: 23px;
+            }
+            //tabletここまで
+            &:hover {
+              color: rgba(255,255,255,1);
+            }
+          }
+        }
+      }
+    }
+    //ハンバーガーメニュー
+    i {
+      display: none;
+
+      @include sp() {
+        position: absolute;
+        right: 21px;
+        font-size: 44px;
+        line-height: 60px;
+        color: $header-color;
+        display: inline-block;
+
+        &:hover {
+          color: rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+  .button{
+    @include object(70px,70px,$button-color);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+
+    .fa-angle-up{
+      margin: 0 17px;
+      font-size: 55px;
+      line-height: 70px;
+      color: #ffffff;
+    }
+    //tablet
+    @include tab() {
+      @include object(50px,50px,$button-color);
+
+      .fa-angle-up {
+        margin: 0 12px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    //tabletここまで
+
+    &:hover{
+      background-color: #505050;
+    }
+  }
+}
+//スマートフォン用ナビゲーションボタン
+nav {
+  @include object(200px,100%,$contents-color);
+  margin-right: -200px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  ul {
+    padding-bottom: 50px;
+    li {
+      @include txt($header-family,13px,bold,0,23px,$header-color);
+      margin: 20px;
+
+      a {
+        text-decoration: none;
+        color: $header-color;
+
+        &:hover {
+          color: rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+}
