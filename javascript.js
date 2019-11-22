@@ -152,13 +152,6 @@ $(function(){
           slidesToShow: 1.5,
           centerPadding: '40px',
         }
-      },
-      {
-        breakpoint: 375,
-        setting: {
-          slidesToShow: 1,
-          centerPadding: '0',
-        }
       }
     ]
   });
