@@ -118,13 +118,13 @@ body #wrap {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 370px) {
-  body  {
-    overflow-x: scroll;
-  }
-}
 body #wrap a.slick-slide {
   display: none;
+}
+@media (max-width: 374px) {
+  body #wrap[data-scroll] {
+    overflow-x: scroll;
+  }
 }
 
 header {
