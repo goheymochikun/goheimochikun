@@ -11,6 +11,7 @@
     @include txt($main-family,20px,normal,0,20px,$contents-color);
     width: 400px;
     margin: 226px auto;
+    text-align: center;
 
     @include tab() {
       font-size: 13px;
@@ -18,6 +19,9 @@
     }
 
     @include sp() {
+      width: auto;
+      margin: 226px 21px;
+      text-align: left;
       font-size: 10px;
       line-height: 17px;
     }
