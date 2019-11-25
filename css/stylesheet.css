@@ -1188,6 +1188,7 @@ footer p {
   font-family: inherit;
   font-size: 100%;
   font-weight: normal;
+  box-sizing: border-box;
 }
 @media (max-width: 1051px) {
   #form-contents form p label input[type="text"], #form-contents form p label input[type="email"] {
@@ -1210,6 +1211,7 @@ footer p {
   font-weight: normal;
   border: 1px solid #707070;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 @media (max-width: 1051px) {
   #form-contents form p textarea {
