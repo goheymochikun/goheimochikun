@@ -121,11 +121,6 @@ body #wrap {
 body #wrap a.slick-slide {
   display: none;
 }
-@media (max-width: 374px) {
-  body #wrap[data-scroll] {
-    overflow-x: scroll;
-  }
-}
 
 header {
   width: 100%;
