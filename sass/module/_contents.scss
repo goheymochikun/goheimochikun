@@ -38,7 +38,8 @@
     //sp
     @include sp() {
       @include object(100%,auto,none);
-      background-position: center px;
+      background-position: center bottom;
+      padding-bottom: 20px;
 
       img {
         width: 100%;
