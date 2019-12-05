@@ -552,7 +552,6 @@ nav ul li a:hover {
     line-height: 17px;
     padding-top: 13px;
     padding-bottom: 13px;
-    word-wrap: break-all;
     word-break: break-all;
   }
 }
