@@ -13,11 +13,4 @@ body {
       display: none;
     }
   }
-
-  //index.htmlのヒーローヘッダーより画面サイズが小さい場合にスクロールバーを表示
-  @media (max-width: 374px) {
-    #wrap[data-scroll]{
-      overflow-x: scroll;
-    }
-  }
 }
