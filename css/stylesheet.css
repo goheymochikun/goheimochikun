@@ -361,7 +361,8 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     background-color: none;
-    background-position: center px;
+    background-position: center bottom;
+    padding-bottom: 20px;
   }
   #contents #hero-header img {
     width: 100%;
