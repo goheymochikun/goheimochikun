@@ -542,7 +542,6 @@ nav ul li a:hover {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0;
-    word-wrap: break-word;
   }
 }
 @media (max-width: 767px) and (min-width: 320px) {
@@ -552,6 +551,7 @@ nav ul li a:hover {
     line-height: 17px;
     padding-top: 13px;
     padding-bottom: 13px;
+    word-wrap: break-word;
   }
 }
 #contents #news .news-wrap ul li:first-child {
