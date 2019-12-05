@@ -37,19 +37,19 @@
     //tabletここまで
     //sp
     @include sp() {
-      //height=204px(imgの高さ)+60px(headerの高さ)+40px(余白)=304px
-      @include object(100%,304px,none);
-      background-position: center 80px;
+      @include object(100%,auto,none);
+      background-position: center px;
 
       img {
-        padding-top: 80px;
+        width: 100%;
+        height: auto;
 
         &:nth-child(2) {
           display: none;
         }
 
         &:nth-child(3) {
-          display: inline-block;
+          display: block;
         }
       }
     }
@@ -96,14 +96,14 @@
 
             //tablet
             @include tab() {
-              width: 368px;
-              height: 227px;
+              width: 90%;
+              height: auto;
             }
             //tabletここまで
             //sp
             @include sp() {
-              width: 199px;
-              height: 123px;
+              width: 90%;
+              height: auto;
             }
             //spここまで
             &:last-child {
