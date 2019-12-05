@@ -553,6 +553,7 @@ nav ul li a:hover {
     padding-top: 13px;
     padding-bottom: 13px;
     word-wrap: break-all;
+    word-break: break-all;
   }
 }
 #contents #news .news-wrap ul li:first-child {
